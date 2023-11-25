@@ -19,7 +19,9 @@ def clear_screen():
     turtle_instance.clear()
 
 def return_home():
+    turtle_instance.penup()
     turtle_instance.home()
+    turtle_instance.pendown()
 
 drawing_board.listen()
 drawing_board.onkey(fun=turtle_forward,key="space")
